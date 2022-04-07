@@ -1,4 +1,5 @@
-﻿namespace ListViewBackgroundImage;
+﻿using Syncfusion.Maui.ListView.Hosting;
+namespace ListViewBackgroundImage;
 
 public static class MauiProgram
 {
@@ -13,7 +14,7 @@ public static class MauiProgram
 				fonts.AddFont("Roboto-Regular.ttf", "Roboto");
 				fonts.AddFont("Roboto-Medium.ttf", "RobotoMedium");
 			});
-
+		builder.ConfigureSyncfusionListView();
 		return builder.Build();
 	}
 }
